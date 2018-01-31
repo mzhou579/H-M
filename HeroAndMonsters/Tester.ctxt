@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=map
+comment1.target=void\ fillMap(java.lang.Object[][])
+comment2.params=map
+comment2.target=void\ printMap(java.lang.Object[][])
+comment3.params=map\ hero
+comment3.target=void\ updateHero(java.lang.Object[][],\ Hero)
+comment4.params=monster\ hero\ map
+comment4.target=int\ checkMonsterMethod(Monster[],\ Hero,\ java.lang.Object[][])
+comment5.params=farmer\ hero\ map
+comment5.target=int\ checkFarmerMethod(Farmer[],\ Hero,\ java.lang.Object[][])
+comment6.params=potion\ hero\ map
+comment6.target=boolean\ checkPotionMethod(Potion[],\ Hero,\ java.lang.Object[][])
+comment7.params=monster\ hero
+comment7.target=boolean\ checkMonsterNearby(Monster[],\ Hero)
+comment8.params=boss\ hero\ map
+comment8.target=boolean\ checkBossMethod(EliteMonster,\ Hero,\ java.lang.Object[][])
+comment9.params=trader\ hero
+comment9.target=boolean\ checkTraderMethod(Trader,\ Hero)
+numComments=10

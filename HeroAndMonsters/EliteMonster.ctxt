@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=EliteMonster()
+comment1.params=h
+comment1.target=void\ setHealth(int)
+comment2.params=
+comment2.target=int\ getX()
+comment3.params=
+comment3.target=int\ getY()
+comment4.params=
+comment4.target=int\ getHealth()
+comment5.params=hero
+comment5.target=int\ getAttack(Hero)
+numComments=6
