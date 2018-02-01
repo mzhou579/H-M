@@ -1,19 +1,37 @@
-public class EliteMonster{
+public class EliteMonster extends Monster{
+    private int number;
+    private int attack;
+    private int health;
     private int x_coord;
     private int y_coord;
-    private int health;
-    private int attack;
     private int x = 0;
     
-    public EliteMonster(){
-        health = 300;
-        attack = 10;
+    public EliteMonster(int number){
+        if(number ==1){
+            health = 100;
+            attack = 20;
+        }
+        else if(number == 2){
+            health = 200;
+            attack = 30;
+        }else if(number ==3){
+            health = 300;
+            attack = 40;
+        }
         x_coord = (int)(Math.random() * 15);
         y_coord = (int)(Math.random() * 15);
     }
     
     public void setHealth(int h){
         health = h;
+    }
+    
+    public int getNumber(){
+        return number;
+    }
+    
+    public void setNumber(int num){
+        number = num;
     }
     
     public int getX(){
@@ -26,6 +44,30 @@ public class EliteMonster{
     
     public int getHealth(){
         return health;
+    }
+    
+    public boolean checkWeapon(String weapon){
+        if(number == 1){
+            if(weapon == "satchel"){
+                return true;
+            }
+            else{
+                return false;
+            } 
+        }else if(number == 2){
+            if(weapon == "short sword"){
+                return true;
+            }else{
+                return false;
+            }
+        }else if(number == 3){
+            if(weapon == "long sword"){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        return false;
     }
     
     public int getAttack(Hero hero){
