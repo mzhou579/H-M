@@ -1,25 +1,13 @@
-public class Monster{
+public abstract class Monster{
     private int attack;
     private int health;
     private int speed;
-    private int x_coord;
-    private int y_coord;
     private int x = 0;
     
     public Monster(){
         attack = (int)(Math.random() * 20) + 10;
         health = (int)(Math.random() * 50) + 1;
         speed = (int)(Math.random() * 4);
-        x_coord = (int)(Math.random() * 15);
-        y_coord = (int)(Math.random() * 15);
-    }
-    
-    public int getXcoord(){
-        return x_coord;
-    }
-    
-    public int getYcoord(){
-        return y_coord;
     }
     
     public void setX(){
@@ -54,6 +42,8 @@ public class Monster{
     public int getSpe(){
         return speed;
     }
+    
+    public abstract boolean checkWeapon(String weapon);
     
     public String toString(){
         return "Monster: \nAttack: " + attack + "\nHealth: " + health + "\nspeed: " + speed;
